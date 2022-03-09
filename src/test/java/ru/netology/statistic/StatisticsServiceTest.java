@@ -35,4 +35,14 @@ class StatisticsServiceTest {
         long actual = service.summ(incomesInBillions);
         assertEquals(expected, actual);
     }
+
+    @Test
+    void average() {
+        StatisticsService service = new StatisticsService();
+        long[] incomesInBillions = {12, 5, 8, 4, 5, 3, 8, 6, 11, 11, 12};
+        long expected = 10;
+        long actual = service.average(incomesInBillions);
+        assertEquals(expected, actual);
+    }
+
 }

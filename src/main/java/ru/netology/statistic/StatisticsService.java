@@ -26,4 +26,13 @@ public class StatisticsService {
         }
         return summ;
     }
+    public long average(long[] incomes) {
+        long average = 0;
+        for (long income : incomes) {
+            if (income >= average) {
+                average ++;
+            }
+        }
+        return average;
+    }
 }

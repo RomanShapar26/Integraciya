@@ -4,10 +4,10 @@ public class StatisticsService {
     public long findMax(long[] incomes) {
         long current_max = incomes[0];
         for (long income : incomes)
-            if (current_max < income)
-                current_max = income;
+            if (current_max < income);
         return current_max;
     }
+
 
     public long findMin(long[] incomes) {
         long currentMin = incomes[0];
